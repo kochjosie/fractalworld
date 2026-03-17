@@ -53,7 +53,7 @@ class Walker {
       fill(150, 1, 97, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     } else {
-      fill(myHue, mySat, myBright, myAlpha);
+      fill(150, 1, 97, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     }
     // PLAY MUSIC
@@ -62,7 +62,7 @@ class Walker {
       fill(150, 1, 97, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     } else {
-      fill(myHue, mySat, myBright, myAlpha);
+      fill(80, 51, 84, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     }
     // PLAY MUSIC
@@ -71,7 +71,7 @@ class Walker {
       fill(150, 1, 97, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     } else {
-      fill(myHue, mySat, myBright, myAlpha);
+      fill(140, 51, 83, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     }
     // PLAY MUSIC
@@ -80,7 +80,7 @@ class Walker {
       fill(150, 1, 97, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     } else {
-      fill(myHue, mySat, myBright, myAlpha);
+      fill(20, 51, 83, 1);
       rect(this.pos.x, this.pos.y, this.r, this.r);
     }
     // PLAY MUSIC
