@@ -1,0 +1,59 @@
+:root {
+    --green: #b1d569;
+    --black: #222224;
+    --white: #f6f8f7;
+}
+
+body {
+    background-color: var(--black);
+    font-family: argent-pixel-cf, sans-serif;
+    font-size: 4vw;
+    color: var(--white);
+}
+
+canvas {
+  display: block;
+}
+
+#page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+}
+
+#koch-caption-block {
+    width: 750px;
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+#koch-caption {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+#koch-caption::after {
+    content: "_";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+#canvas-container {
+    display: flex;
+    align-items: center;
+    height: 750px;
+    width: 750px;
+}
+
+#skater1, #skater2 {
+    height: 50vw;
+}

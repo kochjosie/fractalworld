@@ -1,0 +1,35 @@
+:root {
+    --green: #b1d569;
+    --black: #222224;
+    --white: #f6f8f7;
+}
+
+body {
+    background-color: var(--black);
+    font-family: argent-pixel-cf, sans-serif;
+    font-size: 4vw;
+    color: var(--white);
+}
+
+#dla-caption {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+#dla-caption::after {
+    content: "_";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+#canvas-container {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 800px;
+    border: 1px solid white;
+}

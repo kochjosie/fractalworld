@@ -1,0 +1,35 @@
+:root {
+    --green: #b1d569;
+    --black: #222224;
+    --white: #f6f8f7;
+}
+
+body {
+    background-color: var(--black);
+    font-family: argent-pixel-cf, sans-serif;
+    font-size: 4vw;
+    color: var(--white);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#initial-message {
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+#initial-message::after {
+    content: "_";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
