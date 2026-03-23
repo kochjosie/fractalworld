@@ -1,6 +1,6 @@
 let walls = [];
 let points = [];
-let triangleVertices = [[100, 575],[360, 25],[650, 575]];
+let triangleVertices = [[120, 575],[375, 25],[630, 575]];
 let theta = -Math.PI / 3;
 let depth = 4;
 let freq = 130;  // c3 as default
@@ -8,14 +8,14 @@ let freq = 130;  // c3 as default
 const flakebtn = document.getElementById('snowflake');
 flakebtn.addEventListener('click', () => {
   theta = -Math.PI / 3;
-  triangleVertices = [[100, 575],[360, 25],[650, 575]];
+  triangleVertices = [[120, 575],[375, 25],[630, 575]];
   generateFlake();
 });
 
 const antibtn = document.getElementById('antiflake');
 antibtn.addEventListener('click', () => {
   theta = Math.PI / 3;
-  triangleVertices = [[10, 740], [370, 10], [740, 740]];
+  triangleVertices = [[25, 655], [375, 50], [725, 655]];
   generateFlake();
 });
 
@@ -137,7 +137,7 @@ function findApex(x1, y1, x2, y2, theta) {
 
 function mouseClicked() {
   if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) {
-    let p = new Pt(mouseX, mouseY, random(-0.75, 0.75), random(-0.75, 0.75), freq);
+    let p = new Pt(mouseX, mouseY, random(-2.5, 2.5), random(-2.5, 2.5), freq);
     points.push(p);
   }
 }
@@ -187,7 +187,7 @@ class Pt {
   }
   
   show() {
-    strokeWeight(4);
+    strokeWeight(8);
     stroke(80, 51, 84, 1);
     point(this.position.x, this.position.y);
   }

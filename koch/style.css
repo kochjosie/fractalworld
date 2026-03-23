@@ -7,8 +7,23 @@
 body {
     background-color: var(--black);
     font-family: argent-pixel-cf, sans-serif;
-    font-size: 4vw;
     color: var(--white);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 6vw;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-style: italic;
+    color: #b1d569;
 }
 
 canvas {
@@ -54,6 +69,21 @@ canvas {
     width: 750px;
 }
 
-#skater1, #skater2 {
-    height: 50vw;
+#flake-and-keys {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#snowflake, #antiflake, #playC, #playD, #playE, #playF, #playG, #playA, #playB {
+    font-family: argent-pixel-cf, sans-serif;
+    color: var(--green);
+    background-color: var(--black);
 }
