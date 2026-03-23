@@ -6,14 +6,14 @@ let dt = 0.01;
 
 // Duffing parameters
 let a = 1;   // linear stiffness
-let b = -1;  // nonlinear stiffness
-let c = 0.2; // damping
+let b = 1;  // nonlinear stiffness
+let c = 0.5; // damping
 let f = 0.2; // driving amplitude
-let w = 1.2; // driving frequency
+let w = 0.8; // driving frequency
 
 let path = [];
 
-let myScale = 250; // orbit scale
+let myScale = 400; // orbit scale
 
 let lightGreen = color(80, 51, 83, 1);
 let offWhite = color(150, 1, 97, 1);
