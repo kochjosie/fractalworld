@@ -10,7 +10,8 @@ Would you like to visit another location? Press the key of the page to do so.\n
     
 typeSpeed: 15,
     showCursor: false,
-  });
+  
+});
 });
 
 window.addEventListener('keydown', (e) => {

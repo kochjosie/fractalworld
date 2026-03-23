@@ -13,8 +13,8 @@ function setup() {
   let canvas = createCanvas(800, 400);
   canvas.parent("canvas-container");
   colorMode(HSB, 360, 100, 100, 1);
-  let btn = createButton('Connect Arduino');
-  btn.mousePressed(connectSerial);
+  let abtn = select("#arduino-option")
+  abtn.mousePressed(connectSerial);
   
   start()
 }
@@ -60,7 +60,7 @@ function draw() {
     tree[i].show();
   }
   
-  let currentIterations = tree.length < 400 ? 500 : 100;
+  let currentIterations = tree.length < 400 ? 300 : 75;
 
   for (let n = 0; n < currentIterations; n++) {
     for (let i = walkers.length - 1; i >= 0; i--) {

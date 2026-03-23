@@ -13,8 +13,22 @@
         <script src="sketch.js" defer></script>
     </head>
     <body>
-        <h1>Welcome to the forest.</h1>
-        <div id="canvas-container"></div>
-        <p><span id="dla-caption"></span></p>
+        <div id="page-container">
+            <div id="header">
+                <h1>Welcome to the forest.</h1>
+                <h2>If your browser allows, you can use web serial to control the seasons with a potentiometer.</h2>
+            </div>
+            <div id="row">
+                <div id="canvas-and-buttons">
+                    <div id="canvas-container"></div>
+                    <div id="buttons">
+                        <button id="arduino-option">Connect Arduino</button>
+                        <button id="virtual-option">Virtual Control</button>
+                    </div>
+                </div>
+                <div id="dla-caption-container"><span id="dla-caption"></span></div>
+            </div>
+            <div id="more-info"><span id="more-info"></span></div>
+        </div>
     </body>
 </html>

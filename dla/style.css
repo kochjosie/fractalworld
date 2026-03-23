@@ -7,13 +7,47 @@
 body {
     background-color: var(--black);
     font-family: argent-pixel-cf, sans-serif;
-    font-size: 4vw;
     color: var(--white);
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5vw;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-style: italic;
+    color: var(--green);
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+}
+
+#dla-caption-container {
+    width: 400px;
+    height: 730px;
+    margin-left: 24px;
 }
 
 #dla-caption {
     white-space: pre-wrap;
     text-align: left;
+    font-size: 24px;
+    line-height: 26px;
 }
 
 #dla-caption::after {
@@ -31,5 +65,12 @@ body {
     align-items: center;
     height: 400px;
     width: 800px;
-    border: 1px solid white;
+    border: 1px solid var(--white);
+}
+
+#arduino-option, #virtual-option {
+    font-family: argent-pixel-cf, sans-serif;
+    margin-top: 5px;
+    color: var(--green);
+    background-color: var(--black);
 }
