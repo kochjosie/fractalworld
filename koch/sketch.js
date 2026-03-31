@@ -192,3 +192,10 @@ class Pt {
     point(this.position.x, this.position.y);
   }
 }
+
+document.getElementById('reset-sound').addEventListener('click', () => {
+  for (let p of points) {
+    p.osc.stop();
+  }
+  points = [];
+});

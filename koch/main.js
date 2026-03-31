@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     strings: [`A Koch Snowflake is a kind of fractal. In the natural world, we have stochastic fractals, like real snowflakes, and in the abstract world, we have deterministic fractals, like the Koch Snowflake.\n
 Deterministic fractals are characterized by having a structure that can be iterated infinitely as long as you have enough patience and RAM. The Koch Snowflake, originally called the Koch curve, was discovered in 1904 by Swedish mathmatcian Helge von Koch. A single line was divided into three equal parts. An equilateral traingle is drawn using the two midpoints as vertices. The base is erased and we repeat this process for as long as we desire. It was later discovered that it can be looped to create a shape that very closely resembles a snowflake, most likely by American mathematician Edward Kasner.\n
+A looped fractal like this can be thought of as an instrument, the depth of its fractal geometry reflecting how various shapes of resonating bodies determine sound. Our 'ice rink' becomes a sonic playground, with sound waves sliding across the ice and colliding with its walls.\n
 Would you like to visit another location? Press the key of the page to do so.\n
 [1] The Satellite
 [2] The Forest
