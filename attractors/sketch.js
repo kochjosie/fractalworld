@@ -7,13 +7,13 @@ let dt = 0.01;
 // Duffing parameters
 let a = 1;   // linear stiffness
 let b = 1;  // nonlinear stiffness
-let c = 0.5; // damping
-let f = 0.2; // driving amplitude
-let w = 0.8; // driving frequency
+let c = 0.2; // damping
+let f = 0.45; // driving amplitude
+let w = 1.23; // driving frequency
 
 let path = [];
 
-let myScale = 400; // orbit scale
+let myScale = 100; // orbit scale
 
 let lightGreen = color(80, 51, 83, 1);
 let offWhite = color(150, 1, 97, 1);
@@ -55,7 +55,7 @@ function draw() {
   }
   endShape();
   
-  if (path.length > 2000) {
+  if (path.length > 2500) {
     path.shift();
   }
 }
