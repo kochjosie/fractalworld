@@ -74,3 +74,9 @@ h2 {
     color: var(--green);
     background-color: var(--black);
 }
+
+#virtual-container {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+}

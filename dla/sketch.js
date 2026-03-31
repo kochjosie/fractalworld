@@ -15,6 +15,19 @@ function setup() {
   colorMode(HSB, 360, 100, 100, 1);
   let abtn = select("#arduino-option")
   abtn.mousePressed(connectSerial);
+
+  let vbtn = select("#virtual-option");
+  vbtn.mousePressed(() => {
+  let container = document.getElementById("virtual-container");
+  if (container.style.display === "none") {
+    container.style.display = "block";
+    new p5(virtualSketch);   // launch the virtual pot sketch
+    vbtn.html("Hide Virtual Control");
+  } else {
+    container.style.display = "none";
+    vbtn.html("Virtual Control");
+  }
+});
   
   start()
 }
